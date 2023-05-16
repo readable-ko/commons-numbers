@@ -41,8 +41,8 @@ import java.util.List;
 public enum SortInPlace {
     /** Sort in ascending order. */
     ASCENDING((o1, o2) -> Double.compare(o1.key(), o2.key())),
-    /** Sort in descending order. */
-    DESCENDING((o1, o2) -> Double.compare(o2.key(), o1.key()));
+    /** Sort in descending order. */ //make fail
+    DESCENDING((o1, o2) -> Double.compare(o1.key(), o2.key()));
 
     /** Comparator. */
     private final Comparator<PairDoubleInteger> comparator;
